@@ -1,5 +1,5 @@
 <?php
-$ip = @$_SERVER['REMOTE_ADDR']; //ip adresinden yer tespiti
+$ip = @$_SERVER['REMOTE_ADDR']; //user ip
 $query = @unserialize(file_get_contents('http://ip-api.com/php/'.$ip));
 $sehir = $query["city"];
 $status="";
